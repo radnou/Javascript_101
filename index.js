@@ -13,13 +13,79 @@ Running JavaScript wit Node.js REPL
 */
 
 
-// 1. Values and Variables 
+/**
+============================================================
+| Values & Variables 
+============================================================
+*/
+// |--------------------------------------------------
+// Types and the typeof Operator
+// |--------------------------------------------------
+
+
 let a = 6
 let b = 7
 console.log(a * b)
-console.table(typeof(a))
+// Return the type of a variable 
+console.log(typeof(a))
 
-//never change the value of variable use const 
+let counter = 0
+console.log(counter)
+counter = "zero"
+//Variables don't have type you can do this, but it's a very bad idea. 
+console.log(counter )
+
+let x 
+console.log(x) // Return undefined 
+
+
+//To have to never change the value of variable use const in variable declaration 
 const PI = 3.141592653589793
 console.log(PI)
-PI = 4
+
+const FREEZING = 0, BOILING = 100
+let z, y
+
+/**
+ * Resume 
+ * var counter = 0 OBSOLETE, prefer let 
+ * contter = 1, the MISSPELLING creates a new variable !
+ * « create upon first assignment” is an error in strict mode, a mode that forbids certain outdated constructs. »
+ * You can't reasing a const variable 
+ * the semicolon are not mandatory
+ * Know the type of your variable before create them 
+ */
+/**
+|--------------------------------------------------
+| IDENTIFIERS
+|--------------------------------------------------
+*/
+/**
+ * The name of variable follow theses rules 
+ * « An identifier consists of Unicode letters, digits, and the _ and $ characters. The first character cannot be a digit. »
+ * « Some programmers use identifiers starting or ending with underscores to indicate “private” features »
+ * « In strict mode, these keywords are also forbidden:
+« implements interface let package protected private public static»
+« The following keywords are more recent additions to the language;  you can use them as identifiers for backwards compatibility,  »
+« await as async from get of set target yield»
+ */
+
+const π = 3.141592653589793
+console.log(π)
+/**
+|--------------------------------------------------
+| Numbers 
+|--------------------------------------------------
+*/
+/**
+ * JavaScript has no explicit integer type 
+ * All Number are double-precision floating point numbers 
+ * « If the integer range is insufficient, you can use “big integers,” which can have an arbitrary number of digits »
+ */
+console.log(Number.MIN_SAFE_INTEGER)
+console.log(Number.MAX_SAFE_INTEGER)
+
+const pasVraimentPI = parseFloat('3.14')
+const encoreMoinsPI = parseInt('3')
+console.log(pasVraimentPI)
+console.log(encoreMoinsPI)
