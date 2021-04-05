@@ -89,3 +89,32 @@ const pasVraimentPI = parseFloat('3.14')
 const encoreMoinsPI = parseInt('3')
 console.log(pasVraimentPI)
 console.log(encoreMoinsPI)
+
+const pasDuToutPI = pasVraimentPI.toString()
+const encoreMoinsPiStr = (3).toString()
+console.log(pasDuToutPI)
+console.log(typeof(encoreMoinsPiStr))
+/**
+|--------------------------------------------------
+| Arithmetic operators  
+|--------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
