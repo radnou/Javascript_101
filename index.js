@@ -94,13 +94,21 @@ const pasDuToutPI = pasVraimentPI.toString()
 const encoreMoinsPiStr = (3).toString()
 console.log(pasDuToutPI)
 console.log(typeof(encoreMoinsPiStr))
+console.clear()
 /**
 |--------------------------------------------------
 | Arithmetic operators  
 |--------------------------------------------------
+*/
 
+z = 2
+console.log("hmm: ", z);
+y = 2
+console.log("Raising to a Power")
+console.log(z**y)
+console.log("Assignment and arithmetic operation")
 
-
+z +=10
 
 
 
