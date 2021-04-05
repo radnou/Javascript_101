@@ -100,24 +100,66 @@ console.clear()
 | Arithmetic operators  
 |--------------------------------------------------
 */
-
-z = 2
-console.log("hmm: ", z);
 y = 2
+z = 2
 console.log("Raising to a Power")
 console.log(z**y)
+console.log("hmm: ", z);
 console.log("Assignment and arithmetic operation")
-
 z +=10
+console.log(z)
+z = z -10
+console.log(z)
+console.log("Counter")
+
+counter = 0
+let riddle = counter++
+let enigma = ++counter
+console.log("counter",counter)
+console.log("riddle",riddle)
+console.log("enigma",enigma)
+
+console.log("Concatenation & Conversion")
+counter = 7
+let agent = '00'+counter 
+console.log(agent)
+console.log("// ============================================================ Number to String k")
+ let numberToString = 44
+console.log(numberToString.toString() + ' => '+ typeof(numberToString.toString())) // '44'
+console.log(parseInt(numberToString) + ' => '+ typeof(parseInt(numberToString))) //44
+console.log("// ============================================================ String Number ")
+ let stringNumber = '23'
+ console.log(stringNumber.toString() + ' => '+ typeof(stringNumber.toString())) //'23'
+ console.log(parseInt(stringNumber) + ' => '+ typeof(numberToString.toString())) //23
+console.log("// ============================================================ Empty String ")
+ let emptyString = ''
+ console.log(emptyString.toString() + ' => '+ typeof(emptyString.toString())) //..
+ console.log(parseInt(emptyString) + ' => '+ typeof(parseInt(emptyString))) // 0
 
 
 
+ console.log("// ============================================================ Boolean")
+ /**
+  * All you need to know is on this block abut bool values in JS
+  */
+ if(0 && NaN && undefined && ''){
+   console.log(false)
+ }else{
+   console.log(true)
+ }
+ console.log()
 
+ console.log("// ============================================================ NULL & undefined ")
+ /**
+  * 2 ways to indicate absence of value 
+  * Declare but not initialized => undefined
+  * Intentional absence => Null 
+  */
+ let aNullValue 
+//  declared but has no value 
+console.log(aNullValue)
 
-
-
-
-
+console.log()
 
 
 
