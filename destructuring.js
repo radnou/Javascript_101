@@ -27,9 +27,9 @@ console.log(first, second)
 /**
  * you can swap values easily like this 
  */
- x = 99
- y = 1
+ x = '99'
+ y = '1'
 console.log(x,y)
 //swap 
-[x,y] = [y,x]
+x,y = x,y
 console.log(x,y)
