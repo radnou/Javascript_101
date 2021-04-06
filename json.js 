@@ -1,0 +1,28 @@
+/**
+|--------------------------------------------------
+| JSON
+|--------------------------------------------------
+*/ 
+/**
+ * JavaScript Object Notation
+ * - lightweight text format for exchanging object data between app 
+ * - Values are object literals, array literals, strings, floating-point numbers, true,false, null
+ * All String are delimited by double quotes "" 
+ * all property name are delimited par double quotes "" 
+ * there no trailing commas or skipped elements
+ *
+ */
+
+let jsonExample = {
+  "name":"John Doe",
+  "age": 33,
+  "lucky":true 
+}
+console.log(jsonExample, typeof(jsonExample))
+console.log("// ============================================================ JSON to String " )
+// JSON.stringify is used to send data over HTTP or logging 
+let jsonStringify =JSON.stringify(jsonExample)
+console.log(jsonStringify, typeof(jsonStringify))
+console.log(`jsonStringify=${jsonStringify}`)
+// another method to log object 
+console.log("jsonExample= ",jsonExample)
