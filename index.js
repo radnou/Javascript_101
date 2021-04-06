@@ -158,13 +158,28 @@ console.log("// ============================================================ Emp
  let aNullValue 
 //  declared but has no value 
 console.log(aNullValue)
+console.log("// ============================================================ String literal ")
+let greeting = 'hello 😆 '
+console.log(greeting)
+ greeting = 'Hello \u{1F310}'
+ console.log(greeting)
 
-console.log()
+ console.log("Template literrals")
+ /**
+  * Templates literals are Strings that can contain expression 
+  * and span mutiples lines. These strings are delimited by backticks `
+  * 
+  */
+ let destination = 'world' 
+ console.log(destination )
+ greeting = `Hello, ${destination.toUpperCase()}!`
+console.log(greeting)
+let firstname ='Radnoumane'
+let lastname = 'MOSSABELY'
 
+greeting = `Hello, ${firstname.length > 0 ? `${firstname[0]}.`:''} ${lastname}`
+console.log(greeting)
 
-
-
-
-
-
-
+/**
+ * 
+ */
