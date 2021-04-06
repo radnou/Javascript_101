@@ -181,5 +181,7 @@ greeting = `Hello, ${firstname.length > 0 ? `${firstname[0]}.`:''} ${lastname}`
 console.log(greeting)
 
 /**
- * 
+ * tagged template: template literal 
  */
+let greetingHtml = html`<div>Hello, ${destination}</div>`
+console.log(grettingHtml)
