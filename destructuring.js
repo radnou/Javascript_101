@@ -8,7 +8,7 @@
  * array 
  */
 
-let pair =  [23,12]
+let pair =  [554,12]
 let first = pair[0]
 let second = pair[1]
 let third 
@@ -33,3 +33,16 @@ console.log(x,y)
 //swap 
 x,y = x,y
 console.log(x,y)
+//you can swap variables between array and object
+let harry = {
+  name :'tata Dupont',
+  age:23,
+}
+console.log("Before Swap",pair[0],harry.age)
+
+[pair[0],harry.age] = [13,42]
+console.log("After Swap",pair[0],harry.age)
+
+ harry = { name: 'Harry', age: 42 }
+let { name: harrysName, age: harrysAge } = harry
+console.log(harrysName, harrysAge)
