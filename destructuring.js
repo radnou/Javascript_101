@@ -48,3 +48,5 @@ console.log("After Swap",pair[0],harry.age)
  harry = { name: 'Harry', age: 42 }
 let { name: harrysName, age: harrysAge } = harry
 console.log(harrysName, harrysAge)
+
+//destructuring an object with other methiod
