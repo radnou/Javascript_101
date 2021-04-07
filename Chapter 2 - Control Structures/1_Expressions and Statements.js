@@ -16,7 +16,7 @@ number = 6*7;
 // Such a statement is called a variable declaration 
 // The simplest form of a statement is an
 // `expression statement` is consist of and expression followed by a ;
-console.log(5*4);
+// console.log(5*4);
 /**
  * this line has to effect to dislay 20
  * it also have a value, which happens to be `undefined`
@@ -41,7 +41,7 @@ the expression statement is legal Javascript but i has no effect in program
  */
 let number2 = 5*4;
 //same for this 
-console.log(5*4)
+// console.log(5*4)
 // this will show
 //  20, is the side effect of the console.log() 
 // and undefined is the value of the method call
@@ -59,7 +59,7 @@ console.log(5*4)
 let a = number2
   + Math.PI
 let b = number2
-console.log(a,b) 
+// console.log(a,b) 
 
 // a = number2 + PI
 // b= number2 only 
@@ -69,13 +69,22 @@ console.log(a,b)
 /**
  * Example 2
  */
-let x = a
-(console.log(6*7))
+//let x = a
+//(console.log(6*7))
 /**
  * no semicolon is inserted after the a
  * so 
  * x = a(console.log(6*7))d
  * a is interpreted as a function 
  */
+
+/**
+ * Example 3
+ * 
+ */
+let z = a
+// [1,2,4].forEach(console.log);
+const arrayNumber = [1,23,5]
+arrayNumber.forEach(console.log)
 
  console.log("\u{1F600}");
