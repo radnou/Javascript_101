@@ -40,7 +40,7 @@ let harry = {
 }
 console.log("Before Swap",pair[0],harry.age)
 
-[pair[0],harry.age] = [13,42]
+// [pair[0],harry.age] = [13,42]
 console.log("After Swap",pair[0],harry.age)
 
 //this code below declares two variables harrysName & harrysAge 
@@ -49,4 +49,11 @@ console.log("After Swap",pair[0],harry.age)
 let { name: harrysName, age: harrysAge } = harry
 console.log(harrysName, harrysAge)
 
-//destructuring an object with other methiod
+//destructuring an object with other method
+// use variable with same name of property 
+let {age, name } = harry
+console.log(age, name)
+//same as 
+name = harry.name
+age = harry.age
+
