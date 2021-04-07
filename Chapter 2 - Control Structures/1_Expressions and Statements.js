@@ -10,8 +10,7 @@
 let number = 5*3
 // 5*3 is an expression 
 // 15 is the value 
-
-let number = 6*7;
+number = 6*7;
 // is a statement whose effect is to declare 
 // and initialize the `number` variable
 // Such a statement is called a variable declaration 
@@ -47,3 +46,36 @@ console.log(5*4)
 //  20, is the side effect of the console.log() 
 // and undefined is the value of the method call
 
+
+/**
+ * 2.2 Semicolon Insertion
+ * certain statement must be terminated by a semicolon
+ * the rule is when processing a statement the parser includes every token
+ * until it encourtes a semicolon or an "offending token" 
+ * aka something that could not be part of the statement 
+ * examples 
+ */
+
+let a = number2
+  + Math.PI
+let b = number2
+console.log(a,b) 
+
+// a = number2 + PI
+// b= number2 only 
+// the "let" token at the start of the third line is offending
+// then the parser insert a semicolon the line separator
+
+/**
+ * Example 2
+ */
+let x = a
+(console.log(6*7))
+/**
+ * no semicolon is inserted after the a
+ * so 
+ * x = a(console.log(6*7))d
+ * a is interpreted as a function 
+ */
+
+ console.log("\u{1F600}");
