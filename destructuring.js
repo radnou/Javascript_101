@@ -43,6 +43,8 @@ console.log("Before Swap",pair[0],harry.age)
 [pair[0],harry.age] = [13,42]
 console.log("After Swap",pair[0],harry.age)
 
+//this code below declares two variables harrysName & harrysAge 
+// and initiate them with the 
  harry = { name: 'Harry', age: 42 }
 let { name: harrysName, age: harrysAge } = harry
 console.log(harrysName, harrysAge)
