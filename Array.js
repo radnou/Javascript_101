@@ -9,7 +9,7 @@
  * '0', '1','2' et...
  */
 // declaring an array 
-
+console.log(typeof(42))
 const numbers = [1,2,3,'many']
 //access to an element 
 console.log(numbers[3]) //many
