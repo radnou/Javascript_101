@@ -7,10 +7,10 @@
  * An expression has a value
  */
 // Example
-let number = 5*3
+let number = 5 * 3
 // 5*3 is an expression 
 // 15 is the value 
-number = 6*7;
+number = 6 * 7;
 // is a statement whose effect is to declare 
 // and initialize the `number` variable
 // Such a statement is called a variable declaration 
@@ -28,7 +28,7 @@ number = 6*7;
 the expression statement is legal Javascript but i has no effect in program
 |--------------------------------------------------
 */
-7*7; // no effect on program
+7 * 7; // no effect on program
 // the value is displayed on console 
 /**
  * that is what a read-eval-print loop or REPL does 
@@ -39,7 +39,7 @@ the expression statement is legal Javascript but i has no effect in program
  * for example this expression below will show 
  * undefined 
  */
-let number2 = 5*4;
+let number2 = 5 * 4;
 //same for this 
 // console.log(5*4)
 // this will show
@@ -56,8 +56,8 @@ let number2 = 5*4;
  * examples 
  */
 
-let a = number2
-  + Math.PI
+let a = number2 +
+  Math.PI
 let b = number2
 // console.log(a,b) 
 
@@ -84,27 +84,34 @@ let b = number2
  */
 let z = a
 // [1,2,4].forEach(console.log);
-const arrayNumber = [1,23,5]
+const arrayNumber = [1, 23, 5]
 // arrayNumber.forEach(console.log)
 
 //  console.log("\u{1F600}");
 let str = '223E'
 
 function digital_root(n) {
-  let nS = (''+n)
+  let nS = n.toString()
   let sum = 0;
-  let i = 0;
-  while (i<nS.length){
-    // console.log(nS[i])
-    sum = sum + parseInt(nS[i]);
-    i++;
+
+  if (nS.length >2){
+    let i = 0;
+    while (i < nS.length) {
+      // console.log(nS[i])
+      sum = sum + parseInt(nS[i]);
+      i++;
+    }
+    if (sum.toString().length == 1) {
+      console.log("Size of sum", sum.toString().length, "Value of sum", sum)
+      // console.log(sum)
+      return typeof(sum);
+    } else {
+      digital_root(parseInt(sum))
+  
   }
-  if ( sum.toString().length>=2){
-    // console.log(sum)
-    digital_root(sum)
-  }
-// console.log(typeof(sum))
-  return(sum)
+}
 }
 console.log(digital_root(16))
 console.log(digital_root(456))
+
+let string = "skdjfskldjf"
