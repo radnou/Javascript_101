@@ -85,8 +85,26 @@ let b = number2
 let z = a
 // [1,2,4].forEach(console.log);
 const arrayNumber = [1,23,5]
-arrayNumber.forEach(console.log)
+// arrayNumber.forEach(console.log)
 
- console.log("\u{1F600}");
+//  console.log("\u{1F600}");
 let str = '223E'
-str.conc
+
+function digital_root(n) {
+  let nS = (''+n)
+  let sum = 0;
+  let i = 0;
+  while (i<nS.length){
+    // console.log(nS[i])
+    sum = sum + parseInt(nS[i]);
+    i++;
+  }
+  if ( sum.toString().length>=2){
+    // console.log(sum)
+    digital_root(sum)
+  }
+// console.log(typeof(sum))
+  return(sum)
+}
+console.log(digital_root(16))
+console.log(digital_root(456))
