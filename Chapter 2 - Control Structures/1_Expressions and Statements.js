@@ -88,3 +88,5 @@ const arrayNumber = [1,23,5]
 arrayNumber.forEach(console.log)
 
  console.log("\u{1F600}");
+let str = '223E'
+str.conc
